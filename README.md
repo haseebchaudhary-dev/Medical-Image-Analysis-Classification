@@ -2,7 +2,6 @@
 
 An end-to-end **medical computer vision and AI engineering project** for chest X-ray analysis using Deep Learning, Explainable AI, FastAPI, and Docker.
 
-> **Important:** This project is intended for research and decision-support purposes only. It is **not an autonomous clinical diagnostic system**.
 
 ## Project Overview
 
