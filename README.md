@@ -34,8 +34,8 @@ The model performs three-class classification:
 * Non-COVID Infection
 * Normal
 
->Dataset
-The project uses the **COVID-QU-Ex Dataset**, which contains chest X-ray images and lung segmentation masks.
+> Dataset
+The project uses the COVID-QU-Ex Dataset, which contains chest X-ray images and lung segmentation masks.
 
 The dataset was used for research, preprocessing, validation, model training, and evaluation.
 
@@ -62,9 +62,8 @@ The project includes:
 * Prediction probabilities
 
 
-The application uses **Grad-CAM** to generate visual explanations for model predictions.
+The application uses Grad-CAM to generate visual explanations for model predictions.
 
-```text
 Original X-Ray
       +
 Grad-CAM Heatmap
