@@ -199,43 +199,11 @@ DOCKER_IMAGE.md
 
 ```
 
-## Future Roadmap
-
-* AWS cloud deployment
-* Public API endpoint
-* HTTPS
-* Authentication and API security
-* Monitoring and logging
-* Model versioning
-* Calibration and uncertainty estimation
-* Frontend application
-
-## Portfolio
-
-This project demonstrates an end-to-end AI engineering workflow:
-
-```text
-Data
- ↓
-Computer Vision
- ↓
-Deep Learning
- ↓
-Model Evaluation
- ↓
-Explainable AI
- ↓
-FastAPI
- ↓
-Docker
- ↓
-Cloud Deployment
 
 
-The objective is to demonstrate how a trained computer vision model can be transformed into a **usable, explainable, and deployable AI application**.
 
 ## Connect
 
-If you find this project useful or interesting, feel free to explore the repository, try the Docker image, or connect with me to discuss **AI engineering, computer vision, medical imaging, and production ML systems**.
+If you find this project useful or interesting, feel free to explore the repository, try the Docker image, or connect with me to discuss AI, Machine Learning, Deep Learning, Computer Vision and API Integration & Deployment.
 
-**If you like the project, consider giving the repository a star.**
+If you like the project, consider giving the repository a star.
