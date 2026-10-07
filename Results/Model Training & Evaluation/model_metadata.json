@@ -1,0 +1,36 @@
+{
+  "project": "Medical Image Analysis Assistant",
+  "dataset": "COVID-QU-Ex",
+  "task": "3-class chest X-ray classification",
+  "classes": [
+    "COVID-19",
+    "Non-COVID",
+    "Normal"
+  ],
+  "architecture": "DenseNet121",
+  "pretrained_weights": "ImageNet",
+  "input_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "normalization": "image / 255.0",
+  "training_augmentation": [
+    "RandomFlip(horizontal)",
+    "RandomRotation(0.05)",
+    "RandomZoom(0.10)",
+    "RandomTranslation(0.05)",
+    "RandomContrast(0.10)"
+  ],
+  "fine_tuning": "Last DenseNet121 dense block (conv5_block*) + classification head",
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 1e-05,
+  "epochs_requested": 30,
+  "epochs_completed": 15,
+  "seed": 42,
+  "best_train_accuracy": 0.9297720193862915,
+  "best_validation_accuracy": 0.9119438529014587,
+  "test_accuracy": 0.9314967393875122,
+  "test_loss": 0.19536717236042023
+}

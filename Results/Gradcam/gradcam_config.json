@@ -1,0 +1,27 @@
+{
+    "project": "Medical Image Analysis Assistant",
+    "dataset": "COVID-QU-Ex",
+    "model": "DenseNet121",
+    "model_path": "/content/gradcam_results/models/best_densenet121_covidqu.keras",
+    "gradcam_method": "Grad-CAM",
+    "gradcam_layer": "densenet121/conv5_block16_concat",
+    "input_size": [
+        224,
+        224
+    ],
+    "normalization": "1/255",
+    "alpha": 0.4,
+    "heatmap_colormap": "COLORMAP_JET",
+    "classes": [
+        "COVID-19",
+        "Non-COVID Infection",
+        "Normal"
+    ],
+    "test_samples": 6788,
+    "correct_predictions": 6345,
+    "incorrect_predictions": 443,
+    "gradcam_accuracy": 0.9347377725397761,
+    "low_confidence_threshold": 0.6,
+    "purpose": "Post-hoc visual explanation of DenseNet121 classification predictions.",
+    "important_limitation": "Grad-CAM highlights image regions associated with the model prediction. It does not establish clinical causality, lesion presence, or diagnostic validity."
+}
