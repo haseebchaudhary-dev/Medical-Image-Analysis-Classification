@@ -34,19 +34,14 @@ The model performs three-class classification:
 * Non-COVID Infection
 * Normal
 
-## Dataset
-
+>Dataset
 The project uses the **COVID-QU-Ex Dataset**, which contains chest X-ray images and lung segmentation masks.
 
 The dataset was used for research, preprocessing, validation, model training, and evaluation.
 
-## Machine Learning
-
-### Model
 
 The classification model is based on **pretrained DenseNet121** using transfer learning.
 
-### Preprocessing
 
 The inference pipeline performs:
 
@@ -56,7 +51,6 @@ The inference pipeline performs:
 * Pixel normalization using `1/255`
 * RGB channel conversion for DenseNet121
 
-### Evaluation
 
 The project includes:
 
@@ -67,7 +61,6 @@ The project includes:
 * Confusion matrix
 * Prediction probabilities
 
-## Explainable AI
 
 The application uses **Grad-CAM** to generate visual explanations for model predictions.
 
@@ -83,7 +76,6 @@ Grad-CAM provides an interpretable visualization of image regions that contribut
 
 It should be considered an explainability aid and **not a clinical proof or diagnostic localization method**.
 
-## FastAPI Backend
 
 The trained model is exposed through a production-oriented FastAPI application.
 
@@ -110,17 +102,16 @@ The prediction endpoint provides:
 * Generated vi
 ```
 
-## Docker
 
 The complete inference application is available as a Docker image.
 
-### Pull the Docker Image
+> Pull the Docker Image
 
 ```bash
 docker pull haseeb8184/medical-image-analysis-api:1.0.0
 ```
 
-### Run the Container
+> Run the Container
 
 ```bash
 docker run --name medical-api -p 8000:8000 haseeb8184/medical-image-analysis-api:1.0.0
